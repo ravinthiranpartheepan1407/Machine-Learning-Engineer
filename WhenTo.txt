@@ -1,0 +1,23 @@
+When to use a list?
+
+ - It has order
+ - Definite use cases
+ - if only few info needed processed
+ - Want to have mutable feature
+ - Can have duplicates
+
+When to use a dictionary?
+
+ - It is not sorted
+ - Random cases
+ - If more info need to processed
+ - Want to implement a immutable feature
+ - Keys are unique; if duplicate exists it will override to the last element
+
+ Good Code:
+
+ - Don't DRY (Do not repeat yourself), copy and paste
+ - Predictability
+ - Easier to understand
+ - Make it reusable
+ - Clean : Prettier lines
