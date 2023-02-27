@@ -1,0 +1,2 @@
+import shopping.shoppinglistmodule
+print(shopping.shoppinglistmodule)
