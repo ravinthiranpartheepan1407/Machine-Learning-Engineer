@@ -21,7 +21,7 @@ _________________________________________________________
 _________________________________________________________
 Rule 1: Worst Case
 Rule 2: Remove Constants
-Rule 3: DIfferent term for inputs
+Rule 3: Different term for inputs
 Rule 4: Drop non dominants
 
 _________________________________________________________
