@@ -1,0 +1,42 @@
+# Omega Notation: Only cares about excellent Case
+# Theta Notation: Only cares about average case
+# Big-O: Only cares about the worst Case
+
+O(n!): Worst
+O(2^n): Worst
+O(n^2): Worst
+_________________________________________________________
+
+O(n log n): Okay
+_________________________________________________________
+
+O(n): Good (Iteratives)
+_________________________________________________________
+
+O(log n): Excellent
+O(1): Excellent (Assignment)
+_________________________________________________________
+
+### Rule Book:
+_________________________________________________________
+Rule 1: Worst Case
+Rule 2: Remove Constants
+Rule 3: DIfferent term for inputs
+Rule 4: Drop non dominants
+
+_________________________________________________________
+
+### O(n): Linear Time
+_________________________________________________________
+# No. of ops == No.of Elements (For ex: 4 items in list then there's gonna be 4 ops) -> Linear Operation
+# All Linear Ops have O(n)
+# O(n) -> Big O depends on no.of inputs
+_________________________________________________________
+
+### O(1): Constant Time
+_________________________________________________________
+# O(1) : Process only one item in the list no matter how many items are there in a list.
+# O(1): Has excellent Big-O complexity
+# No.of elements Process = 1 (Only one) and the ops going to be flat; it cannot concurrenlty run iterative process for the elements
+_________________________________________________________
+
