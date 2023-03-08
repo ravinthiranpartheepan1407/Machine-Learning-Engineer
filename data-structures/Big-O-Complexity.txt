@@ -40,5 +40,5 @@ _________________________________________________________
 # No.of elements Process = 1 (Only one) and the ops going to be flat; it cannot concurrenlty run iterative process for the elements
 _________________________________________________________
 
-# Nested Loops will have: O(arbitrary_var * aritrary_var) # Refer nested_mn_complexity.py
+# Nested Loops will have: O(arbitrary_var * aritrary_var = arbitrary_var^2) # Refer nested_mn_complexity.py
 # Single iter loop segments will haveL O(arbitrary_var + arbitrary_var) # Refer mn_complexity.py

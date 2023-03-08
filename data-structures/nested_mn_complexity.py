@@ -6,7 +6,7 @@ list = [10,20,30,40,50,60,70,80] #O(1)
 
 def main():
     try:
-        for i in list: #O(m)
+        for i in list: #O(n)
             if i > value: #O(n)
                 value_append.append(i) #O(1)
                 # break
@@ -21,4 +21,4 @@ def main():
 
 main()
 print("The appended values are: ", value_append)
-print("Overall complexity is: O(m*n)")
+print("Overall complexity is: O(n^2)")
