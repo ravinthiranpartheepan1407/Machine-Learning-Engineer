@@ -21,3 +21,4 @@ When to use a dictionary?
  - Easier to understand
  - Make it reusable
  - Clean : Prettier lines
+ - Scalable: In terms of Memory and Speed
