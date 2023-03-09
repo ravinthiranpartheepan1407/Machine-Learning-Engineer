@@ -2,6 +2,7 @@
 # Theta Notation: Only cares about average case
 # Big-O: Only cares about the worst Case
 
+### Solve Problems that's what matters
 ### Remember: Write code for readability but not for optimizing time and space complexity...
 ### Balancing Readability and Good Space & Time Complexity is always outstanding
 _________________________________________________________
