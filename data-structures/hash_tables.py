@@ -1,5 +1,11 @@
 # Hash Tables are useful in DB, caches, and other more important use cases
 
+# Hash Tables are unordered but it has flexible keys, fasters lookups, faster inserts
+
+# Use Hash Tables when the case is O(n^2)
+
+# O(n) occurs during search, insertion when there is a collision
+
 # Hash a key using SHA-256 (FIPS) algorithm and store the value. Fetch the value from the hashed key
 
 # Iterating through hashtables will have O(1) for all -> serach, insert, delete, lookup

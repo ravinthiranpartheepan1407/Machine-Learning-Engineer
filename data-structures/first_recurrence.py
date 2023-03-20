@@ -9,11 +9,11 @@
 # 4. Print the recurred integer
 
 import hashlib
-lists = ["He", "Hi", "Hello", "He", "Hi", "Data"]
+lists = ["Hi", "Hello", "He", "Hi", "Hello", "He", "hi", "Data"]
 
 store = []
 
-def first_recurrence(lists):
+def first_recurrence(lists): # O(n)
     for items in lists: # Hashing through iteration not possible with int type such as using range or len
         data = items.encode('utf-8')
         alg = hashlib.sha1(data)
@@ -22,12 +22,14 @@ def first_recurrence(lists):
             'key': hashed,
             'value': items
         }
-        if lists.count(items) > 1:
+        if lists.count(items) > 1: # O(n^2) because of using count built-in function
             store.append(store_hash)
             get_key = store_hash.get('key')
             print(f'The key is: {get_key}')
             print(f'The key of first recurred int is {get_key} and the value is {items}')
             break
+        else:
+            print("There's no first recurrence!")
 
 first_recurrence(lists)
 
