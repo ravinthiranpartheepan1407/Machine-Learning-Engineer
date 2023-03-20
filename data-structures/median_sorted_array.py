@@ -26,6 +26,6 @@ def merge_list_median(list_1, list_2):
 def merge_median_log(list_1, list_2):
     for i in list_1:
         sort = sorted(i)
-        print(s)
+        print(sort)
 
 merge_list_median(list_1, list_2)
