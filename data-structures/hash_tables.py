@@ -2,6 +2,8 @@
 
 # Hash a key using SHA-256 (FIPS) algorithm and store the value. Fetch the value from the hashed key
 
+# Iterating through hashtables will have O(1) for all -> serach, insert, delete, lookup
+
 # Breakdown:
 
 # 1. Create an input variables for key and value
