@@ -12,7 +12,7 @@ node = int(input("Enter an integer: "))
 removed_node = []
 
 def remove_nth_item_back(int_list, node): # The complexity is O(n)
-    for items in range(len(int_list)):
+    for _ in range(len(int_list)):
         remove = int_list[-node]
         removed_node.append(remove)
         existing_nodes = list(set(int_list) - set(removed_node))
