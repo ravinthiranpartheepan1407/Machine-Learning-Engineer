@@ -45,11 +45,13 @@ def romanToInt(input_data):
     total = 0
 
     for chars in range(len(input_data)): 
-        current = map.get(input_data[chars])
+        # Current = map.get(input_data[0]) -> map.get('L')
+        # Current = L values is 50 -> current = 50
+        current = map.get(input_data[chars]) 
+        
         check_char = input_data in map.keys()
         print(check_char)        
-        # Current = map.get(input_data[0]) -> L
-        # Current = L values is 50 -> current = 50
+
         if current > 0:  # 50 > 0
             # total = 50
             total += current
