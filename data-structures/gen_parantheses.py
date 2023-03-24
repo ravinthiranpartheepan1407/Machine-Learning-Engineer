@@ -9,11 +9,13 @@
 parantheses_value = int(input("Enter a value: "))
 
 generated_parantheses = []
+combinations = []
 
 def gen_parantheses(parantheses_value): # Linear time complexity O(n) because of indefinite input range and appending range
-    for _ in range(parantheses_value):
-        generate = "()"
-        generated_parantheses.append(generate)
+    for chars in range(parantheses_value):
+        parantheses = "()"
+        generated_parantheses.append(parantheses)
+        
 
 gen_parantheses(parantheses_value)
 print(generated_parantheses)
