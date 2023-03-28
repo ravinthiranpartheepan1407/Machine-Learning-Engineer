@@ -12,9 +12,9 @@
 # 1. Create a input var with type of int
 # 2. Create dict with key of int(1..9) and values as (one..nine)
 # 3. Iterate through the input and count int
-# 4. For ex: if the input us 1211
-    # 4.1 value[0] = 1 (one) + value[1] = 2 (two) -> one two -> 12
-    # 4.2 value[2] = 1 (one) + value[3] = 1 (one) -> one one -> 11
+# 4. For ex: if the input us 224455
+    # 4.1 value[0] = 2 + value[1] = 2 (two) -> two two -> 22
+    # 4.2 value[2] = 4 + value[3] = 4 (four) -> four four -> 44
     # 4.3 final -> "12" + "11" -> 1211
 
 input_int = input("Enter a value: ")
@@ -38,11 +38,8 @@ def count_n_say(input_int):
             say.append(get_val)
             count_say = say.count(get_val)
             print(f"There are {count_say} {get_val}'s")
-            find_max_count = max(val_dict.fromkeys(input_int[nums]))
-            if count_say > 1:
-                result_append = str(count_say) + str(find_max_count)
-                print(result_append)
-
-            
+            # if count_say > 1:
+            result_append = str(count_say) + str(input_int[nums])
+            print(result_append)            
 
 count_n_say(input_int)
