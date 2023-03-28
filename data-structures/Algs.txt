@@ -1,0 +1,16 @@
+# Doubly Linked List: Used to have additional node
+# First New node in the block points to it's previous head node
+# The last new node in the new block points to the previous head node.
+
+# Singly vs Doubly
+    # Singly :
+        # Lesser Memory
+        # Cannot be iterated in reverse
+        # Use it when the logic needs less memory to process (For ex: Searching)
+    # Doubly :
+        # It can be iterated both in reverse and from front.
+        # It is complex to implementation
+        # Cost extra ops
+        # Requires more memory and storage
+        # Good for searching in backwards
+
