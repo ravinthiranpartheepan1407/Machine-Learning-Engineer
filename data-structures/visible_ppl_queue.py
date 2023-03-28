@@ -20,12 +20,17 @@ def visible_ppl_queue(peoples):
     for person_count in range(person_index,len(peoples),1):
         if peoples[person_count] < peoples[person_count+1]:
             visibility.append(peoples[person_count+1])
-            print(f'The person {person_index} able to see {visibility}')
+            print(f'This person {person_index} able to see {visibility}')
             # print(f'The person {peoples[person_count]} can see {peoples[person_count+1]}')
             continue
         else:
             print("Not able to see others")
         break
+        
+        # elif peoples[person_count] > peoples[person_count+1]:
+        #     visibility.append(peoples[person_count+1])
+        #     print(f'This tallest person {peoples[person_index]} can see {peoples[person_count+1]}')
+        #     continue
         
 
 visible_ppl_queue(peoples)
