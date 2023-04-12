@@ -21,7 +21,7 @@
 
 import numpy as np 
 
-# angle = int(input("Enter angle value: "))
+# angle = int(input("Enter angle value: ")) 
 opposite = int(input("Enter opposite value: "))
 hypotenuse = int(input("Enter hypotenuse value: "))
 
@@ -39,13 +39,14 @@ class Opposite(Angle):
 class Adjacent:
     def adjacent_find(self, opposite, hypotenuse):
         find = np.sqrt((hypotenuse^2) - (opposite^2))
-        print(f'The adjacent is: {find}')
+        return find
 
 class Hypotenuse:
-    def hypotenuse_find(self, hypotenuse, opposite):
-        find = np.sqrt((hypotenuse^2) + (opposite^2))
-        print(f'The hypotenuse is: {find}')
-
+    def hypotenuse_find(self, opposite):
+        opp = opposite^2
+        adj = Adjacent.adjacent_find(self, opposite, hypotenuse)
+        # find = np.sqrt((opp^2) + (adj^2))
+        print(f'The hypotenuse is: {opp}')
 
 obj_angle = Angle()
 obj_opposite = Opposite()
@@ -55,5 +56,11 @@ obj_Hypotenuse = Hypotenuse()
 print(obj_angle.angle_find(opposite, hypotenuse))
 print(obj_opposite.opposite_find(hypotenuse))
 print(obj_adjacent.adjacent_find(opposite, hypotenuse))
-print(obj_Hypotenuse.hypotenuse_find(hypotenuse, opposite))
+print(obj_Hypotenuse.hypotenuse_find(opposite))
+
+
+# Angle = opposite, hypotenuse
+# Opposite = hyptenuse, angle
+# Adjacent = opposite - hypotenuse
+# Hypotenuse = adjacent + opposite
 
