@@ -4,7 +4,7 @@
 
     # μ -  Mean = all_elements / len(all_elements) || Mean = (10 + 15 + 20 + 25 + 30) / 5 = 20
     # σ - Standard Deviation = sqrt of variance || SQRT(50)
-    # σ² - Variance = sqaured difference of all_element  || Variance = ((10 - 20)^2 + (15 - 20)^2 + (20 - 20)^2 + (25 - 20)^2 + (30 - 20)^2) / 5 = 50
+    # σ² - Variance = sqaured difference of all_element and mean  || Variance = ((10 - 20)^2 + (15 - 20)^2 + (20 - 20)^2 + (25 - 20)^2 + (30 - 20)^2) / 5 = 50
 
     # Shape: Bell Shaped and Symmetrical
     # Range of value: Can take ay range of value

@@ -6,7 +6,7 @@
 # Adjacent:
     # Adjacent = sqrt(hypotenuse^2 - opposite^2)
 # Hypotenuse:
-    # Hypotenuse = sqrt(hypotenuse^2 + opposite^2)
+    # Hypotenuse = sqrt(Adjacent^2 + opposite^2)
     # Opposite to right the 90 degree (Opposite side)
 
 # Breakdown:
