@@ -1,0 +1,57 @@
+Descriptive Statistics:
+    - Not used to realted your particular data with other group or dataset
+    - Used for characterize the a particular data feature
+    - Can apply: Mean, Median, mode, variance, skew, Kurtosis, Distribution Shape, Spectrum(Frequency, Time Series)
+
+Inferential Statistics:
+    - Used for relating a data feature with other groups or dataset
+    - Can apply: T/F/Chi-Square, Hypothesis Testing, Confidence Interval, P-Value
+
+Accuracy:
+    - Used to find the relationship between the measurement and real world value
+    - If the measured temp is 25-30c today and the real world temp is also between 25-30c then it has higher Accuracy
+    - If the measured temp is 30-35c but the real worl temp is 20-25 then it is a bias (Low acccuracy)
+
+Precision:
+    - Certainity of a measurement
+    - For ex: If the data measurement is closer to each other or similar to each other then it has higher precision 
+    - Inversely related to variance.
+    - Modern cameras (Higher Precision) and Dish Taste at different hotel (Low precision because tastes differs in diff hotels)
+
+Resolution:
+    - If there are enormous amount of data then there will be good resolution but noisy too
+    - If there are low amount of data then it have Low resolution
+
+Some examples:
+    - If Data Resolution is HIGH and Data closer to each other but different from real word measurement: H(P, R) and L(A)
+    - If Data Resolution is LOW and Data closer to each other with closer to real word measurement: L(R) and H(P, A)
+
+
+Data Distribution (USed to provide insights into nature):
+    - Distribution: Number of sample and Number of Frequency
+    - Gaussian Distribution: Bell Shaped (Ranges from - to +)
+    - T Distribution: Bell Shaped (Smoothened, Ranges from - to +)
+    - F Distribution: Ranges only from +
+    - Chi-Sqaure (Pronounced as kai) Ranges only from +
+    - If there is only one peek then it is a unimodal distribution
+    - If there are multiple peek then it is a multimodal distribution
+
+    - Peak start and Peak end space defines the amount of data residing in between
+
+    - Rieman Sum used for computing the area under the curve
+    - Rieman_Compute = height of each points * width of x-axis and the do SUM(Rieman_Compute)
+
+PDF: Use when you want to find the likelihood of an element of a continous range of variable
+CDF: Use when you want to find the likelihood of an element upto a certain range of variable.
+
+Bell_Shaped: Only occurs when the scores are normal distributed (mean == median and St.Deviation gives idea on how to spread the data around the mean)
+Linear Shaped (Low-to-High): Only occurs when the scores are equal
+Skewed Distribution: Only occurs when the scores are not symmmetrical distributed such as one end i higher than other end.
+Right or Left skewed ch-squared distribution: Only occurs when the scores has bias or any limit.
+
+Want to calculate probability? Then always use: elements[index] / total elements
+
+Analytical Gaussian Distribution: Describe the data from theoretical formula
+Emperical Normal Distribution: Describe the data from real data not from the formula (Gives more clarity on requirements than in Gaussian)
+
+

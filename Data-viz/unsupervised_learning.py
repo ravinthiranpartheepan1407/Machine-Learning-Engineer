@@ -1,5 +1,5 @@
 # Gaussian Distribution or Normal or Bell curve Distribution:  f(x) = (1/σ√(2π)) * e^(-(x-μ)²/(2σ²))
-
+    # PDF: f(x) = 1/(b-a)
     # Rules: Considers highest at mean
 
     # μ -  Mean = all_elements / len(all_elements) || Mean = (10 + 15 + 20 + 25 + 30) / 5 = 20
