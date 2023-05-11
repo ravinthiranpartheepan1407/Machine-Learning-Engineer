@@ -24,7 +24,7 @@ def cal_bin_Freedman_Diaconis():
     data = np.random.gamma(0.6, size=1000)
     iqr = np.percentile(data, 65) - np.percentile(data, 35)
     bin = 2 * iqr / (len(data)**(1/3)) # 1/3 = Cube root
-    num_of_bins = (max(data) - min(data)) / bin
+    num_of_bins = (np.ceil(max(data) - min(data))) / bin
     print(num_of_bins)
 
     plt.hist(num_of_bins, bins=50)

@@ -64,3 +64,7 @@ Exponent Decay: Decreases at an ever-decreasing rate
 # Gamma Distribution: Used to measure the amount of possibilities (considering it's various factors of target as well) to achieve the target.
 # For example, if we are cooking briyani, the gamma distribution will measure the possibilities to make briyani such as 45 minutes, 50 minutes, 60 minutes depending on various factors (Quantity of briyani, temperature level for cooking,..)
 
+# When to use Z-Score and Min-Max Scaling?
+    - Both Z-Score and Min-Max scaling are used for normalizing the data and used to compares values from different data and scales the values between 0 to 1
+    - But Z-Score scales the mean to 0 and std to 1; Also used to identify the outliers
+    - Min-Max Scaling scales the data min to 0 and max to 1; Less sensitive to outliers but it emphazie the relative diff btw values
