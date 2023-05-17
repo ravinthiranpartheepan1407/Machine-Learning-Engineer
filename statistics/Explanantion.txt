@@ -68,3 +68,8 @@ Exponent Decay: Decreases at an ever-decreasing rate
     - Both Z-Score and Min-Max scaling are used for normalizing the data and used to compares values from different data and scales the values between 0 to 1
     - But Z-Score scales the mean to 0 and std to 1; Also used to identify the outliers
     - Min-Max Scaling scales the data min to 0 and max to 1; Less sensitive to outliers but it emphazie the relative diff btw values
+
+# σ represents the population standard deviation, while σ² represents the population variance
+
+# OUTLIERS:
+    - 

@@ -10,7 +10,7 @@
 ## Z-Transofrm: Used for measuring the data from different categories in a fair way by using mean, and std to measure the spread of score
 
 # For ex: if persons A, B, and C are throwwing a ball where A stands closer to the target and B stands half the distance away from the target and 
-# C stands far away from  the target. So obviously A will more than B and C because he is closer to the target so it's not fair to tell how hits more.
+# C stands far away from  the target. So obviously A will score more than B and C because he is closer to the target so it's not fair to tell how hits more.
 # That's where z-score comes in by relatively comparing the peoples distance and their score and use std to get highest person's index.
 
 

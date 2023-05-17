@@ -1,0 +1,21 @@
+# Parametric Test:
+
+    # More sensitive to outliers
+    # Types: 1-Sample test, 2-Sample test, Pearson Correlation, ANOVA
+
+# Non-Parametric Test (Based on medians or ranks so it is insensitive to outliers):
+
+    # Less sensitive to outliers
+    # Wilcoxon sign-rank test
+    # Mann-Whitney U test
+    # Spearman Correlation
+    # Kruskal-Wallis test
+    # Permutation Testing
+
+# Mean is sensitive to outliers
+# Median is insensitive to outliers.
+
+
+
+
+
