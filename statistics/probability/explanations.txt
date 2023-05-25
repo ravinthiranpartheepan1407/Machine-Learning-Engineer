@@ -1,0 +1,43 @@
+- Inferential Statistics is all about probability
+    - Probability tells how likely an event occurs or how likely a proposition is true
+    - 0 indicates impossible and 1 indicates possible
+    - The sum of all probabilities in a set must sum to 1
+    -- # Data must have mutually exclusive labels or bins. For ex: if you wanna calculate a probability on a same TV brand then it is possible.
+    -- # But if you wanna calculate probability on different electronic device (Xbox, PS2..) brands with TV then it is not possible because the labels or bins must be same.
+
+# Use % when the probaility ranges from 0 to 100
+# Don't use % when probability ranges from 0 to 1
+
+- Use probability when an outcome of an event occurance is uncertain.
+
+- Probability vs proposition    
+    - Probability (Depends on a question is phrased):
+        - Likelihood of an event occurance or a statement is true
+    - Proposition:
+        - Fraction of whole
+
+- Conditional Probability:
+    - Depends on no.of factors
+
+- Data Types for Probabilities:
+    - Interval: Not Possible because it doesn't have a categorical and rank type. If you wanna compute probability then convert it to discrete
+    - Ratio: Not Possible because it doesn't have a categorical and rank type. If you wanna compute probability then convert it to discrete
+    - Discrete(Range of numbers): Possible
+    - Ordinal: Possible
+    - Nominal: Possible 
+
+- Interval and Ratio Probability Example:
+    - If the height of man is 166.5491616184841511.... cm
+    - The height measurement is not suitable for finding the probability range...
+    - So it must be converted to discrete type as 166 - 167
+
+- Probability actual computation: ## Before computations always validate data type
+    - p[index] = 100 x count_of_event[index] / sumOf(total_no_of_events)
+    - For ex: A jar containing: 40 Blue balls, 30 Yellow balls, 20 Ornage balls then the probability would be
+    - p[blue] = 100 x 40 / 90 = 44.4%             # 90 - Total balls and 40 - Blue Balls
+    - p[yellow] = 100 x 30 / 90 = 33.3%
+    - p[orange] = 100 x 20 / 90 = 22.2%           # Sum of all the occurance "SANITY CHECK" is (99.9%): 100% -> 44.4 + 33.3 + 22.2
+    - Sanity Check = 44.4 + 33.3 + 22.2 = 99.9%
+
+
+
