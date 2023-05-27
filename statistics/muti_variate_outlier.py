@@ -35,6 +35,6 @@
 
     # Compute data mean
     # Compute distance from each data point to mean
-    # Conver distances to z-score
+    # Convert distances to z-score
 
 

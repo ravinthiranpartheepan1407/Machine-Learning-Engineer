@@ -13,6 +13,7 @@
 - Probability vs proposition    
     - Probability (Depends on a question is phrased):
         - Likelihood of an event occurance or a statement is true
+        - Can used to compute only a range of events but it cannot continue continous events.
     - Proposition:
         - Fraction of whole
 
@@ -39,5 +40,47 @@
     - p[orange] = 100 x 20 / 90 = 22.2%           # Sum of all the occurance "SANITY CHECK" is (99.9%): 100% -> 44.4 + 33.3 + 22.2
     - Sanity Check = 44.4 + 33.3 + 22.2 = 99.9%
 
+- Probability and Odds (Both are closely related to each other):
+    - Odds (Nothing but a Ratio) For ex: The odds are 6:1 against
+    - Formula: n:m = n/m
+    - Actual Formula: r = (1-p) / p         ## where (1-p) event not occuring and p is event occuring..     # r = (1-p) / p  => 1/1+n/m
 
+    For ex: Start with the expression p = (1 - 4/52) / (4/52).
+    -   Simplify the numerator:
+    -   p = (48/52) / (4/52).
 
+    -   Divide both the numerator and denominator by 4/52:
+    -   p = (48/52) * (52/4).
+
+    -   Simplify the expression:
+    -   p = 12/1.
+
+- Probability Mass and Density:
+    - Mass: Describe probabilities for a set of exclusive discrete events
+    - MDensity: Describe probabilities for a set of exclusive dcontinous events
+
+- Probability Function: f(x) = p(X = x) # Function defines the probability of x in the set X.
+    - f(x(base[i])) = p(X = x) # Value of particular element of func is equal to the probability of that event.
+    - Such that (st.) p(x = x[index]) >= 0 (Non Negative only allowed)
+    - st. p(X != x[index]) = 0 (One category will processed at a time and the rest will be 0)
+    - sumOf(p(X = x[index])) = 1 (Probability of all elements should equal to 1)
+
+- Probability Mass Functions (Exclusively discrete events):
+    - Probabilities visualization should be in bar plot or histogram (Discrete events should be seperated and don't draw lines inbetween events)
+
+- Probability Density Function (Exclusively continous events):
+    - To calculate the in between event (X) value of A and B is: p(a <= x <= b) = calculus high(b) low(a): f(X) dx
+
+- CDF (Cummulative Distributive Function or F-Distribution -> np.linpsace, stats.lognorm.pdf and cdf, np.Cumsum):
+    - PDF(T-Distrbution -> Used to find the larger group numbers from the smaller group numbers): Increase and then Decrease
+            - PDF always sum upto 1.
+    - CDF(Cummulative Sum of Probablity Distribution or F-Distribution -> Used to compares different groups to check if they are different from each other: c(x[index] = p(X <= x[index]))): Only Increase
+            - CDF Doesn't sum upto 1 hence it's sum will be larger than 1.
+            <---> CDF Starts at 0 and Increase more than 1. ## Important Formula: c(x[index] = summation(p(x[index])))
+            - Y-axis values at x-value is the sum of probabilities to the left of x-value. c(x[index] = integral: Low=-infinity High=index p(x (base(t) dt)))
+
+- Use the t-distribution (PDF) when you have a small group of numbers and want to make guesses about the larger group they represent.
+- Use the F-distribution (CDF) when you have three or more groups and want to compare them to see if they are really different from each other.
+
+- Sample Estimation Distribution:
+    - 
