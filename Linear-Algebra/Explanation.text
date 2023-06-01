@@ -1,0 +1,74 @@
+- Linear Algebra: Focus on proofs and theory
+- Matrix Algebra: Focus on Applications
+
+- Linear Algebra is a Pre-requisite for Multi-Variate Calculus
+
+- Applications: 
+    - Data Analysis and Big Data, 
+    - Computer Graphics, 
+    - Graphy Theory (Used to understand Networks and relationship),
+    - and so on...
+    - Linear algebra uses 1D or 2D or 3D but in recents times the modern CG (Computer Graphics) applications and CG algorithms 4D called Quadranions.
+
+- Vectors can be represented in lowercase letter "v"
+- Matrix can be represented in uppecase letter "A"
+- Scalar can be represented in lowercase non boldface letters such as (Alpha, beta..)
+
+- Why it is used?
+    - Linear Algebra widely used: Statistics, Data Science, Data Augmentation, PCA: Dimension Reduction,...
+    - To know the structures and features of a dataset we will build Models of the data;
+    - Models is a set of equations that contains underlying dynamics of the data
+
+- Vectors:
+    - Vectors (Always call "A Vector"): Are just an ordered list of numbers. Vectors can have int, float, imaginary, complex numbers and also functions as elements
+    - Two types of vectors: Row (Horizontal) and Column (Vertical)
+    - Vectors represented in lowercase letters as: v or v(Italics) or v with Upper Magnitude or v with half upper Magnitude
+    - All the elements in the vector should have same dimensionality and same no.of elements
+
+- Geometry:
+    - Geomtry: In geometry, vectors can represented in length and direction from source (TAIL) to target (HEAD)
+    - In geometrical vectors, the direction should be in straight Linear
+    - Geometrical Vectors have 0 as their origin
+
+
+- Scalar:
+    --- Scalar represent 1 or 1x1 matrix
+
+- Scalar Conditions:
+    - If the scalar (a > 1): then the result will be greater than the orginal element.
+    - If the scalar (α ∈ (inbetween) 0,1): then the result will be smaller than the orginal element
+    - If the scalar (α < 1): then the result will go in the opposite direction with the reagrds to the orginal elements.
+
+    - Remember, In linear algebra sense, if the Directions flows are linear then it is a single dimension.
+
+- Dot Product:
+    - It is a single number to explain the relationship between two vectors
+    - It is called as scalar Product
+    - Dot or Scalar product can be written as: (a.b) or <a,b> or (a^(T(Transpose))b) or SumOf(a_base[index].b_base[index])
+
+- Dot Product Properties (Associative, Distributive, Commutative):
+
+    - Associative (It is not a Linear Algebra; It is a Scalar Algebra):
+        - We can put () Parantheses where we want
+        - Eg_1: a(b.c) = (a.b)c
+                    (or)
+        - Eg_2: a(b.c) = (a.c)b
+        - Associative rule can be applied only: Even if the orientation of the scalars changed and it's result is going to be the same then we can apply.
+        - Eg_1: ab(c.a) = (ab.c)a                   # This is an Associative rule because it will produce same result
+        # Eg_1: a^T(b^T.c) = (a^T . b^T)*c          # This is an Associative rule
+        - Eg_2: a^T(b.c)c^T = (a^T . b)*c.c^T       # This is not an Associative rule because it doesn't produce same result
+    
+    - Distributive (Means normal scalar not vectors):
+        - Eg_1: a(b+c) = ab + ac                # A -> Distrbuted
+        - Eg_2: a ^ T(b+c) = a^T.b + a^T.c      # A^T -> Distrbuted
+
+    - Commutative:
+        - Applicable only when the order of scalars can be changed and still it produce same results
+        - For Eg_1: a + b = b + a
+        - For Eg_2: a^T(b + c) = (a^T . b) + c
+        
+
+
+
+
+

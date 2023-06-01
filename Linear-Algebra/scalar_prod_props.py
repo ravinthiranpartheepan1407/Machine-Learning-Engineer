@@ -1,0 +1,3 @@
+# Associative
+# Distributive
+# Commutative
