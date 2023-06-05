@@ -41,7 +41,7 @@
 
     - Remember, In linear algebra sense, if the Directions flows are linear then it is a single dimension.
 
-- Dot Product:
+- Dot Product (or) Scalar Product:
     - It is a single number to explain the relationship between two vectors
     - It is called as scalar Product
     - Dot or Scalar product can be written as: (a.b) or <a,b> or (a^(T(Transpose))b) or SumOf(a_base[index].b_base[index])
@@ -66,7 +66,81 @@
         - Applicable only when the order of scalars can be changed and still it produce same results
         - For Eg_1: a + b = b + a
         - For Eg_2: a^T(b + c) = (a^T . b) + c
-        
+
+- Cartesian Axis: Graph with + (2 sides: Right and Top) and - ranges(2 sides: Left and Bottom)
+
+- How to calculate Length / Magnitude of a vector (Based on right Angle Triangle -> opposite: 90deg Line, Adj: Bottom line, Hyp: Length of line meets the 90deg from Adj starting point):
+    - Length of a vector can be represented as || v ||          (USED TO MEASURE IMPORTANCE (For ex: A larger than B,..) BETWEEN TWO VECTORS)
+    - Formula: || v || = sqrt(v^T v)
+    - Pythagoras is not valid choice for calculating length of a vector because the hypotenuse length doesn't make sense with the lenght it results.
+    - Just for reference Pythagoras theorem: || v ||^2 = (V1)^2 + (v2)^2                    => Formula:  || v || = sqrt((v1)^2 + (v2)^2)
+        - For ex: Using pythagoras: v1=2 and v2=3, || v ||^2 = (2)^2 + (3)^2 = 4 + 9 = 13
+            - And then sqr goes of || v || = sqrt(13) which this result is not directly processed
+            - So result 13 can be length of vector because it doesn't make sense with the vector values of just 2 and 3
+        - That's why we use length of vector via geometry using || v ||  = sqrt((v1)^2 + (v2)^2) = It will directly give sqrt(13) without any units (13)
+
+- How to calculate angle between two vectors (Used to measure similarities between two vectors):
+    - Formula: a^Tb = |a||b|cos(angle [base(a,b)])
+    - Length of a vectors represented by ||v|| or |v|
+    - To calculate follow these steps:                  ## Cos should range from -1 to +1
+         1. α = |a||b|cos(angle[base(ab)])               # Where α is a vector    
+         2. α/|a||b| = cos(angle[base(ab)])         
+         3. α/|a||b| * cos(angle[base(ab)]) =  cos(angle[base(ab)]) / cos(angle[base(ab)])      /* Take cos inversion to cut out cos on right side */              
+         ## angle[base(ab)] = acos(α / |a||b|)  # Final Formula 
+
+    - Dot product features: a = |a||b|cos(angle[base(ab)]) 
+        -  ## Cos should range from -1 to +1
+            - if the ANGLE is < 90 degree (ACTUE ANGLE (+ve): Have Similarities) then:                             cos(angle) > 0: a>0 (The dot product will be positive)       
+            - if the ANGLE is > 90 degree (OBSTUCE ANGLE (-ve): Have No Similarities) then:                        cos(angle) < 0: a<0 (The dot product will be negative)
+            - if the ANGLE is = 90 degree (RIGHT ANGLE (Orthogonal): Have No Similarities / Independent) then:     cos(angle) = 0: a=0 (The dot product will be zero)  
+            - if the ANGLE is = 0 degree (LINEAR) then: Have High Similarity                                       cos(angle) = 1: a=1 (The dot product will be the result of |a||b|)
+
+    - Both
+        - ALGEBRA: sumOf(a[base[i]] b[base[i]]) = GEOMETRY: cos(angle[base(ab)]) ||a|| ||b|| is same
+
+    - Law of cosines:
+        - We can find length of hypotenuse only for right angle triangle using this formula: c^2 = hypotenuse^2 + adjacent^2 (Pythgorian Theorem)
+        - But if we don't have right angle triangle then we calculate length of hypotenuse using: 
+            - Take a perpendicular (AKA Orthogonal) split from opposite and hypotenuse line convergence that will create adjacents as b1 and b2
+            - From the perpendicular split call it as a1
+            - From the split, from adjacent to Opposite call it as b1 and Adjacent to hypotenuse as b2
+            - ## NOW FORMULA: c^2 = a1 ^ 2 + b1 ^ 2
+
+            Formula Processing (Considering only the portion flow twrds hypoetnuse not opposite):
+
+            # If hypotenuse is a, adjacent - b, and opposit is c
+                - Then a will have only a and a1 (Perpendicular Split)
+                - Then b will have two splits b1: close to opposite and b2 close to hypotenuse
+                - Then c will have only c
+
+                - Hint (soh cah toa) -> (considering perpendicular splits as 90 degree)
+                    1. soh (perpendicular): Sin (a1) = opposite / hypotenuse =>                  # a1 = hypotenuse.sin, 
+                    2. cah (Horizontal)     Cos (b2) = adjacent / hypotenuse =>                  # b2 = hypotenuse.cos,
+                
+                - To calculate the b1 = adjacent - b2                                            # b1 = b - b2 (where b2 = hypotenuse.cos)
+                    3. b1 = adjacent - (hypotenuse.cos)
+
+                - Now apply c^2 = a1^2 + b1^2
+                    - c^2 = (hypotenuse.sin(angle))^2 + (adjacent - hypotenuse.cos(angle))^2
+                    - c^2 = hypotenuse^2 . sin^2(angle) + (adjacent^2 + hypotenuse^2 . cos^2(angle) - 2(b.hypotenuse.cos(angle)))  # (a-b)^2 formula
+                    - c^2 = hypotenuse^2 (sin^2(angle) + cos^2(angle)) + adjacent^2 - 2(b.hypotenuse.cos(angle))                   # sin^2(angle) + cos^2(angle) = 1
+                    - ## c^2 = hypotenuse^2 + adjacent^2 - 2(b.hypotenuse.cos(angle))
+
+                - Rewrite the above equation to vectors: # Remember ||a-b||^2  = (a-b)^T (a-b) (or) ||a+b||^2 = (a+b)^2 (a+b)
+                    1. || c || = ||a - b||^2                                                      
+                    2. ||a - b ||^2 = (a-b)^T (a-b)                                               # Apply distributed rule a-> a = a^2, b -> b^2,..
+                    3. (a^T . a) + (b^T . b) - 2a^Tb
+                    4. a^2 + b^2 - 2a^Tb = ||a||^2 + ||b||^2 - 2||a|| ||b|| cos(angle[base(ab)])  # Apply angle between vectors formula for a^Tb
+                                                                                                  # a^Tb = |a||b|cos(angle [base(a,b)])
+
+                - IMPORTANT: a^T b = ||a||.||b||. cos(angle[base(ab)])              # This is an alebgriac expression
+
+
+
+    
+
+
+
 
 
 
