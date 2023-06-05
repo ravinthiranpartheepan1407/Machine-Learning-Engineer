@@ -134,6 +134,7 @@
                                                                                                   # a^Tb = |a||b|cos(angle [base(a,b)])
 
                 - IMPORTANT: a^T b = ||a||.||b||. cos(angle[base(ab)])              # This is an alebgriac expression
+                - np.linalg.norm = sqrt(|a|^2 + |b|^2....)                          # Length of vector formula
 
 
 
