@@ -22,24 +22,24 @@
 -- | Wave S8500  | Samsung      | 175   | 9259       |
 -- +-------------+--------------+-------+------------+
 
--- CREATE TABLE mobiles(
---     name VARCHAR(50),
---     manufacturer VARCHAR(50),
---     price INTEGER,
---     units_sold INTEGER
--- );
+CREATE TABLE mobiles(
+    name VARCHAR(50),
+    manufacturer VARCHAR(50),
+    price INTEGER,
+    units_sold INTEGER
+);
 
--- INSERT INTO mobiles(
---     name, 
---     manufacturer, 
---     price, 
---     units_sold
--- ) VALUES
---     ('N1280','Nokia',199,1925),
---     ('S5620 Monte','Samsung',250,2385 ),
---     ('N8','Nokia',150,7543),
---     ('Droid','Motorola',150,8395),
---     ('Wave S8500','Samsung',175,9259);
+INSERT INTO mobiles(
+    name, 
+    manufacturer, 
+    price, 
+    units_sold
+) VALUES
+    ('N1280','Nokia',199,1925),
+    ('S5620 Monte','Samsung',250,2385 ),
+    ('N8','Nokia',150,7543),
+    ('Droid','Motorola',150,8395),
+    ('Wave S8500','Samsung',175,9259);
 
 SELECT * from mobiles;
 
