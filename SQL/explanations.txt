@@ -1,0 +1,19 @@
+# A Table is just a collection of records
+
+# CREATE TABLE, INSERT INTO VALUES, SELECT FROM, AS,.. - Keyword
+# Identifiers - Name we are going to assign for the table
+
+# INSERT Params should match VALUES params
+
+# In Select Query: * get all the data.
+    - To rename an imaginary column use "AS" Keyword
+    - We can also perform math ops and comparitive check in Select
+    - For ex: SELECT name, country='Ind' AS indian from useraccount;
+
+# String Ops: 
+    - || (Pipe Operator)    -> Join two string
+    - CONCAT                -> Join two string
+    - LOWER                 -> Gives lower case string
+    - LENGTH                -> Gives no.of chars in a str
+    - UPPER                 -> Gives upper case string
+
