@@ -19,6 +19,6 @@
     ## ∀ αv+βw ∈ R: This statement explains For any scalar vectors αv, βw it's linear combination should be a memeber of real numbers
 
 #### Note:
-#    - If the vectors cannot math the member even with scaled with scalar mul then it will have [ multi dimensional planes (AKA): HYPERPLANE ]
+#    - If the vectors cannot match the member even scaled with scalar mul then it will have [ multi dimensional planes (AKA): HYPERPLANE ]
 #    - If the vectors can match the members with scalar mul then it will have single dimensional plane
 
