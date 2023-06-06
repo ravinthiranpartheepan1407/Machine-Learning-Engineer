@@ -36,7 +36,7 @@
 
 - Scalar Conditions:
     - If the scalar (a > 1): then the result will be greater than the orginal element.
-    - If the scalar (α ∈ (inbetween) 0,1): then the result will be smaller than the orginal element
+    - If the scalar (α ∈ (inbetween) 0,1): then the result will be smaller than the orginal element    # Where ∈ is called as Member
     - If the scalar (α < 1): then the result will go in the opposite direction with the reagrds to the orginal elements.
 
     - Remember, In linear algebra sense, if the Directions flows are linear then it is a single dimension.
