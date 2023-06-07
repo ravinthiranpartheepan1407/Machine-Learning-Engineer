@@ -49,4 +49,19 @@ SELECT name, price * units_sold AS revenue FROM mobiles;
 
 SELECT name || ' : ' || UPPER(manufacturer) AS series_with_brand, price * units_sold AS revenue from mobiles;
 
+-- Cannot reference COLUMN alias "revenue" to WHERE clause.
+
+-- Remember: First Exec -> FROM table, 2nd Exec -> WHERE Condition, 3rd Exec -> SELECT params 
+
+-- Filter manufacturers with revenue > 1000000
+SELECT manufacturer, price * units_sold AS revenue FROM mobiles WHERE price * units_sold > 1000000;
+
+-- Filter products from manufacturers
+SELECT name FROM mobiles WHERE manufacturer='Nokia';
+
+-- Check if manfacturer SAMSUNG in the record
+-- Exists: Used to check if the element is already there
+-- 1: Returns true if the element is present
+SELECT EXISTS(SELECT 1 FROM mobiles WHERE manufacturer='Samsung')AS Is_Present;
+
 

@@ -1,7 +1,8 @@
 # Harmand Multipliation: Element wise multiplication.
 
 # np.multiply: Element wise multiplication
-# np.dot: Matrix multiplication or dot product
+# np.dot: Dot product
+# np.matmul: Matrix Multiplication
 
 import numpy as np
 import matplotlib.pyplot as plt

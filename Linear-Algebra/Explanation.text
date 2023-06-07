@@ -136,7 +136,17 @@
                 - IMPORTANT: a^T b = ||a||.||b||. cos(angle[base(ab)])              # This is an alebgriac expression
                 - np.linalg.norm = sqrt(|a|^2 + |b|^2....)                          # Length of vector formula
 
+For ex: 
+A = [1, 2, 3]
+B = [4, 5, 6]
 
+- Hadmard Product: Use when we want to perform ops between corresponding elements                   -> C = A * B = [1 * 4, 2 * 5, 3 * 6] = [4, 10, 18]
+- Dot Product:     Used to multiply corresponding elements and sum them up into singular val        -> A · B = (1 * 4) + (2 * 5) + (3 * 6) = 4 + 10 + 18 = 32
+- Mat Mul: Used to combines rows and columns of matrices to produce a new matrix
+
+    - A = [[1, 2], [3, 4]] , B = [[5, 6], [7, 8]], C = A * B
+
+    - C = [[(1 * 5) + (2 * 7), (1 * 6) + (2 * 8)], [(3 * 5) + (4 * 7), (3 * 6) + (4 * 8)]] => [[19, 22], [43, 50]]
 
     
 
