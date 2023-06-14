@@ -1,0 +1,56 @@
+--- DL is all about Empirical Blackbox approximation and universal approximation which are used to solve complex problems effectively
+-- Remeber: Never ever call ARTIFICIAL NEURONS call it as NODES
+
+--- Conceptual Idea of ANN:
+        - Input -> Algorithm Experimentation (Simple Maths: +, -, /, log) -> Output
+        
+        - 1/3 math of DL: y^1 or Y^ (Hat symbol ^) = x0 + x[base(1)] w[base(1)] + x[base(2)] w[base(2)]
+            - By default, x0 will be bias and doesn't take any weights (NOTE: Basis always set to 1 and used to keep the NN learning rate not centered around 0 or to shift the decision boundary of the model)
+            - Where x1 and x2 are input data 
+            - Y^ (Hat symbol ^) is the prediciton or output (Like for ex: Either a student [Pass, Fail])
+            - w1 and w2 are weights and used to encode importance of a data feature
+
+        -- y^ (Hat symbol ^) = x[base(1)] w[base(1)] + x[base(2)] w[base(2)]   -> This is a linear Function and it can't solve non-linear problems (Dot and Addition makes Linear Function)
+    
+        -- If the data is not relevant prediciton then that data weight will be 0 (Zero)
+
+        -- y^ = sigma(x1 w1 + x2 w2)    -> Where sigma is a non-linear function
+
+        -- Each Circle Units represents Artificial Nodes and represents the simple equations (Linear weighted + non-linearity functions)
+
+        -- ANN: Different Group of classes predicition or optimizing deep learning models for different kinds of problems (input -> Predict -> outcome)
+
+        -- CNN: Works with pictures prediciton
+
+        -- RNN: Works well with Time-Series, Text Translation, Audio Clip or want to predict specific outcome
+
+        -- Deep Learning architectures can visualized in different ways but all of them have same architectural definition so no need to see it as different arch type.
+
+--- How models learn?
+    -- Forward Propagation: Y^ (Hat symbol ^) = x0 + x1 w1 + x2 w2 + ...
+    -- Forward Propagation Steps (Left to Right: Input to Output(Singular Point)):
+        - Starts from the Input data
+        - Weights all the data points
+        - Put I/P data features and the weighted points together and that results in O/P
+
+    -- Backward Propagation (Backprop: Output(Singular Flow) to Input) (Right to Left: Backwards):
+        - Starts from output
+        - Travels through nodes and the output value is used to adjust the weights of it's respective data features (Each weights will be unique).
+        - Note: Inorder to increase or decrease weights we need to use some calculus, gradient descent or optimization mechanism.
+
+--- Role of DL in science and knowledge:
+    
+    -- Empirical Black box approximation: It doesn't reveal it's internal worflows but we can find patterns from giving input and getting the output.
+        -- Usually Black Box approach won't reveal it's internal workflow
+        - For ex: If we need to get the output 9 from input 3 we can get it in different ways like sqauring, addition....
+        - The squaring, and other math ops for getting the result 9 is the internal workflow and that won't reveal in the black box approx.
+
+    -- Universal Approximation: With sufficient hidden layers and nodes it makes the neural network to learn and model complex data relationship accurately
+
+-- Fact about AI consciousness is still agnostic because consciousness requires human body + brain and AI doesn't have that. Though, AI can have different form of consciousness comapred to human consciousness.
+
+-- Parametric experiments: 
+    - Iterating an experiment while systematically manipulating one or two Independent variables (such as learning rate, batch size, optimizer, loss func, and so on..) for getting better model results from diff experiments POV.
+    - Variables type:
+        - Independent Variable (Used to experiment with different vars / parmas for a model): Learning rate, batch size, optimizer, loss func, .....
+        - Dependent Variable (Results we will get from optimizing the Independent vars for finding better target)  : Accuracy, speed, overall computation time...

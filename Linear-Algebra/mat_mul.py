@@ -1,3 +1,5 @@
+# Mat_mul: can use np.mat_mul or @
+
 # Matrix Multiplication is different from Vector Multiplication
     #   - Vec Mul: Both inner product dim has to be same Mat_A = dim(5 x 1) and Mat_B = dim(5 x 1) 
     #   - Mat_A Mat_B => Mat_A ^ T . Mat_B = dim(1 x 5) dim(5 x 1) => Result dim = (1,1)    -> Vector Mul is possible because inner products match

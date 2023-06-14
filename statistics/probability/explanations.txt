@@ -82,5 +82,15 @@
 - Use the t-distribution (PDF) when you have a small group of numbers and want to make guesses about the larger group they represent.
 - Use the F-distribution (CDF) when you have three or more groups and want to compare them to see if they are really different from each other.
 
-- Sample Estimation Distribution:
-    - 
+--- DL experiments:
+    - Successful training model depends on high no.of learning rate and training epochs.
+        -- Correct Interpretation of DL experiments:
+            - Depends on this is the best set of params for this arch, dataset, and model
+            - This is a general pattern we can likely see in other models and other datasets
+        -- Incorrect interpretation of DL experiments:
+            - We can pick the exact optimal params for every model and every dataset because each model differs and dataset differs. So, we can't pick the exact params
+
+--- Problems with experimental approach:
+    - Feasibility: Smaller models are faster to compute but large models takes more time.
+    - Generalizability: Specific findings from one model may not be replicated in other archs or other serts of params
+        - Solution: Use experimental approach to BUILD INTUITION AND GAIN EXPERTISE about DL modelling in general.
